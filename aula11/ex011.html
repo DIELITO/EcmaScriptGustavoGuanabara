@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nacionalidade</title>
+    <style>
+        body {
+            background-color: black;
+            color: white;
+        }
+        h1 {color: white;}
+        div {margin-top: 20px;}
+    </style>
+</head>
+<body>
+    <h1>Nativo ou estrangeiro?</h1>
+    Digite em qual país você vive:<br><br>
+    <input type="text" name="pais" id="pais">
+    <input type="button" value="Verificar" onclick="verificar()">
+    <div id="resver"></div>
+    <script>
+        var digitado = document.getElementById('pais')
+
+        function lower(inputString){
+            return String(inputString).toLowerCase()
+        }
+           
+        function verificar(){
+            var texto = lower(digitado.value)
+            var div = document.getElementById('resver')
+            if (texto == 'brasil'){
+                div.innerHTML = `Você é Brasileiro!`
+            } else {
+                div.innerHTML = `Você é Estrangeiro!`
+            }
+        }
+    </script>
+</body>
+</html>
