@@ -1,13 +1,11 @@
 function contar(){
-    var ini = 0
-    var iniok = ''
-    if (ini==0){
-        console.log('Atenção: preencha o campo inicio')
-    }
-    else{
-        iniok=ini
-        console.log(iniok)
-    }
+    var inicio = document.getElementById('ini')
+    var fim = document.getElementById('fim')
+    var passo = document.getElementById('pas')
 
-
+    if (inicio.value.length == 0 || fim.value.length == 0 || passo.value.length == 0){
+        alert('[ERRO] Falta dados para fazer a contagem, verifique os campos!')
+    } else {
+        alert('tudo ok por enquanto')
+    }
 }
