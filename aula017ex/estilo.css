@@ -17,6 +17,10 @@ section {
     box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.815);
 }
 
+select#lista {
+    width: 150px;
+}
+
 footer {
     margin-top: 30px;
     color: white;
